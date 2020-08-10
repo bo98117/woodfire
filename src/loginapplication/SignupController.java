@@ -39,7 +39,6 @@ public class SignupController implements Initializable {
 
     Connection connection = null;
     PreparedStatement preparedStatement = null;
-    //ResultSet resultSet = null;
 
     public SignupController() {
         connection = ConnectionUtil.connectdb();
@@ -49,7 +48,11 @@ public class SignupController implements Initializable {
     private void submit(ActionEvent event) {
         String email = textEmail.getText();
         String password = textPassword.getText();
-
+        
+        if (validateEmail(email)) {
+               alertMessage("Please enter a valid email address", "Invalid Email Address", null);
+            }
+        
         String sql = "INSERT INTO `woodfire`.`user` (`email_address`, `password`) VALUES (?, ?);";
 
         try {
@@ -57,25 +60,23 @@ public class SignupController implements Initializable {
             preparedStatement.setString(1, email);
             preparedStatement.setString(2, password);
             preparedStatement.executeUpdate();
-            if (validateEmail(email)) {
-               infoBox("Please enter a valid email address", "Invalid Email Address", null); 
-            } else {
+            
 
-            infoBox("Registration Successfull", "Success", null);
+            alertMessage("Registration Successfull", "Success", null);
             Node source = (Node) event.getSource();
             stage = (Stage) source.getScene().getWindow();
             stage.close();
             scene = new Scene(FXMLLoader.load(getClass().getResource("LoginSignup.fxml")));
             stage.setScene(scene);
             stage.show();}
-        } catch (Exception e) {
+         catch (Exception e) {
             e.printStackTrace();
         }
 
     }
 
     //Set up Alerts
-    public static void infoBox(String infoMessage, String titleBar, String headerMessage) {
+    public static void alertMessage(String infoMessage, String titleBar, String headerMessage) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(titleBar);
         alert.setHeaderText(headerMessage);

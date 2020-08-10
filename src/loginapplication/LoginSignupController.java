@@ -62,9 +62,9 @@ public class LoginSignupController implements Initializable {
             preparedStatement.setString(2, password);
             resultSet = preparedStatement.executeQuery();
             if (!resultSet.next()) {
-                infoBox("Enter Correct Email and Password", "Failed", null);
+                alertMessage("Enter Correct Email and Password", "Failed", null);
             } else {
-                infoBox("Login Successfull", "Success", null);
+                alertMessage("Login Successfull", "Success", null);
                 Node source = (Node) event.getSource();
                 stage = (Stage) source.getScene().getWindow();
                 stage.close();
@@ -92,7 +92,7 @@ public class LoginSignupController implements Initializable {
         }
     }
 
-    public static void infoBox(String infoMessage, String titleBar, String headerMessage) {
+    public static void alertMessage(String infoMessage, String titleBar, String headerMessage) {
         Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle(titleBar);
         alert.setHeaderText(headerMessage);
