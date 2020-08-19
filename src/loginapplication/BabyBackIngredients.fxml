@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #D2B48C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginapplication.BabyBackIngredientsController">
+<AnchorPane id="AnchorPane" prefHeight="702.0" prefWidth="703.0" style="-fx-background-color: #D2B48C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginapplication.BabyBackIngredientsController">
    <children>
       <Label layoutX="22.0" layoutY="24.0" text="BabyBack Ingredients" textFill="#c3801b">
          <font>
@@ -17,7 +20,7 @@
             <InnerShadow height="29.9" radius="6.975" width="0.0" />
          </effect>
       </Label>
-      <Button layoutX="48.0" layoutY="149.0" mnemonicParsing="false" onAction="#home" style="-fx-background-color: #DEB887; -fx-border-color: #000000;" text="Home" textFill="#8f5b0e">
+      <Button layoutX="617.0" layoutY="155.0" mnemonicParsing="false" onAction="#home" style="-fx-background-color: #DEB887; -fx-border-color: #000000;" text="Home" textFill="#8f5b0e">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -26,5 +29,50 @@
          </effect>
       </Button>
       <Line endX="599.7999877929688" layoutX="101.0" layoutY="124.0" startX="-100.0" stroke="#69441c" strokeWidth="5.0" />
+      <CheckBox layoutX="50.0" layoutY="174.0" mnemonicParsing="false" text="Salt" textFill="#6f2727">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="50.0" layoutY="228.0" mnemonicParsing="false" text="3/4 cup brown sugar" textFill="#6f2727">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="50.0" layoutY="286.0" mnemonicParsing="false" text="3/4 cup granulated white sugar" textFill="#6f2727">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="50.0" layoutY="390.0" mnemonicParsing="false" text="1/4 cup garlic powder" textFill="#6f2727">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="50.0" layoutY="337.0" mnemonicParsing="false" text="1/2 cup paparika" textFill="#6f2727">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="50.0" layoutY="439.0" mnemonicParsing="false" text="2 Tbsp ground black pepper" textFill="#6f2727">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="50.0" layoutY="488.0" mnemonicParsing="false" text="2 Tbsp ginger powder" textFill="#6f2727">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="50.0" layoutY="539.0" mnemonicParsing="false" text="2 Tbsp onion powder" textFill="#6f2727">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <ImageView fitHeight="461.0" fitWidth="297.0" layoutX="385.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/dinoIngredients1.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

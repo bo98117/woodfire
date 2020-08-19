@@ -3,11 +3,14 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #D2B48C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginapplication.PorkButtTechniqueController">
+<AnchorPane id="AnchorPane" prefHeight="868.0" prefWidth="875.0" style="-fx-background-color: #D2B48C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginapplication.PorkButtTechniqueController">
    <children>
       <Label layoutX="41.0" layoutY="24.0" text="Pork Butt Technique" textFill="#c3801b">
          <font>
@@ -17,7 +20,7 @@
             <InnerShadow height="29.9" radius="6.975" width="0.0" />
          </effect>
       </Label>
-      <Button layoutX="48.0" layoutY="149.0" mnemonicParsing="false" onAction="#home" style="-fx-background-color: #DEB887; -fx-border-color: #000000;" text="Home" textFill="#8f5b0e">
+      <Button layoutX="777.0" layoutY="141.0" mnemonicParsing="false" onAction="#home" style="-fx-background-color: #DEB887; -fx-border-color: #000000;" text="Home" textFill="#8f5b0e">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -25,6 +28,41 @@
             <InnerShadow color="#a47e1e" height="49.53" radius="33.7775" width="87.58" />
          </effect>
       </Button>
-      <Line endX="599.7999877929688" layoutX="101.0" layoutY="124.0" startX="-100.0" stroke="#69441c" strokeWidth="5.0" />
+      <Line endX="978.064453125" layoutX="101.0" layoutY="124.0" startX="-100.0" stroke="#69441c" strokeWidth="5.0" />
+      <Text layoutX="41.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Rinse and dry rack of ribs." />
+      <Text layoutX="41.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Apply salt all over pork butt.  Approximately 1 tsp per pound." />
+      <Text layoutX="41.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Refrigerate overnight." />
+      <Text layoutX="41.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Apply 1tbsp of rub all over pork butt.  Approximately 1 tbsp per pound." />
+      <Text layoutX="41.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Start the fire and set the smoker temperature to 225°F" />
+      <Text fill="#0c5263" layoutX="71.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="note: Make sure that you have 'good smoke' " />
+      <Text layoutX="41.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Place pork butt in smoker and place a thermometer probe into the thickest part of the meat." />
+      <Text layoutX="41.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. Close lid.  Add one chunk of cherry and apply wood every 30 minutes while maintaining a temperature of 225°F." />
+      <Text fill="#0c5263" layoutX="70.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="note: Do not exceed three chunks of cherry and apple wood chunks.  Too much wood can give the meat a bitter taste." />
+      <Text layoutX="41.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8. The meat will come to a stall after 2 - 3 hours staying at 150°F.  This can last hours. " />
+      <Text layoutX="53.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At this point wrap the meat in aluminum foil to help it past the stall." />
+      <Text layoutX="41.0" layoutY="563.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9. When the temp hits 203°F the pork butt is ready to come out of the smoker.  " />
+      <Text layoutX="41.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10. Allow the meat to rest at least one hour. " />
+      <Text layoutX="41.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11. Pull the meat apart." />
+      <Text layoutX="41.0" layoutY="667.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12. Place the pulled pork on a bun with slaw and your favorite bbq sauce or in a taco with some pickeled red onions and cilantro and your favorite salsa! " />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="577.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/pork%20butt.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="210.0" layoutY="694.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/pull%20pork%20sandwich.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="500.0" layoutY="694.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/taco.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="593.0" layoutY="484.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/pork.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
