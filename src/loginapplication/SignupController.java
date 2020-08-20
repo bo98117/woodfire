@@ -53,7 +53,7 @@ public class SignupController implements Initializable {
                alertMessage("Please enter a valid email address", "Invalid Email Address", null);
             }
         
-        String sql = "INSERT INTO `woodfire`.`user` (`email_address`, `password`) VALUES (?, ?);";
+        String sql = "INSERT INTO `woodfire`.`user` (`email`, `password`) VALUES (?, ?);";
 
         try {
             preparedStatement = connection.prepareStatement(sql);
